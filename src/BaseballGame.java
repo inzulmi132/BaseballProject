@@ -3,9 +3,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class BaseballGame {
-
     String target;
-    public BaseballGame() {
+
+    public BaseballGame(int n) {
         List<String> list = new ArrayList<>();
         for(int i = 1; i < 10; i++) {
             list.add(String.valueOf(i));
@@ -13,7 +13,7 @@ public class BaseballGame {
         Collections.shuffle(list);
 
         this.target = "";
-        for(int i = 0; i < 3; i++) {
+        for(int i = 0; i < n; i++) {
             this.target += list.get(i);
         }
     }
