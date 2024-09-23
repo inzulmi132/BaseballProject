@@ -42,7 +42,7 @@ label: while(true) {
                     System.out.println("< 게임을 시작합니다. >");
                     baseballGame.setDifficulty(difficulty);
                     baseballGame.setTarget();
-                    System.out.println(baseballGame.getTarget());
+                    // System.out.println(baseballGame.getTarget());
                     baseballGame.play();
                     break;
                 // 0~3 이 아닌 입력은 무시.
